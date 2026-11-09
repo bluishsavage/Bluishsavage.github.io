@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Promotional Partnerships | BluishSavage</title>
+
+<style>
+:root {
+    --navy: #172536;
+    --blue: #315d80;
+    --light-blue: #eaf0f5;
+    --background: #f5f6f7;
+    --white: #ffffff;
+    --text: #252a30;
+    --muted: #626c76;
+    --border: #dce1e5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    background: var(--navy);
+    color: white;
+    padding: 22px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #8db7d8;
+}
+
+.header-label {
+    font-size: 13px;
+    color: #c5d0da;
+}
+
+/* Introduction */
+
+.intro {
+    background: white;
+    padding: 65px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.intro-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.intro h1 {
+    color: var(--navy);
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.intro p {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 760px;
+}
+
+.intro .subtitle {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* General sections */
+
+section {
+    padding: 55px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    color: var(--navy);
+    font-size: 27px;
+    margin: 0 0 8px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    margin: 0;
+}
+
+/* Package cards */
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.package {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 28px;
+}
+
+.package.featured {
+    border-top: 4px solid var(--blue);
+}
+
+.package-number {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.package h3 {
+    color: var(--navy);
+    font-size: 23px;
+    margin: 8px 0;
+}
+
+.package-description {
+    color: var(--muted);
+    min-height: 50px;
+    margin: 0 0 18px;
+}
+
+.package-price {
+    padding: 13px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--navy);
+}
+
+.package-price small {
+    display: block;
+    font-weight: normal;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.package h4 {
+    font-size: 13px;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.package ul {
+    padding-left: 19px;
+    margin: 0;
+}
+
+.package li {
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+.best-for {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.best-for strong {
+    color: var(--navy);
+}
+
+/* Additional information */
+
+.details {
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+}
+
+.detail h3 {
+    font-size: 16px;
+    color: var(--navy);
+    margin: 0 0 6px;
+}
+
+.detail p {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Contact */
+
+.contact {
+    text-align: center;
+    padding: 65px 20px;
+    background: var(--navy);
+    color: white;
+}
+
+.contact h2 {
+    font-size: 29px;
+    margin: 0 0 12px;
+}
+
+.contact p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #c5d0da;
+}
+
+.contact a {
+    display: inline-block;
+    background: white;
+    color: var(--navy);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact a:hover {
+    background: var(--light-blue);
+}
+
+/* Footer */
+
+footer {
+    background: #101b28;
+    color: #aab5bf;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    .packages,
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        padding: 45px 20px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .header-label {
+        display: none;
+    }
+
+    .package-description {
+        min-height: 0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">BLUISH<span>SAVAGE</span></div>
+        <div class="header-label">
+            CONTENT CREATION & PROMOTIONAL PARTNERSHIPS
+        </div>
+    </div>
+</header>
+
+<div class="intro">
+    <div class="intro-content">
+        <div class="subtitle">Business Partnerships</div>
+
+        <h1>Promote Your Business Through Live Content</h1>
+
+        <p>
+            I partner with local businesses to create live, on-location
+            content that introduces their business to an online audience.
+            Through livestreaming and social media, I bring viewers along
+            to experience what your business has to offer.
+        </p>
+
+        <p>
+            Whether you're looking for a simple promotional appearance
+            or a larger social media campaign, there are several
+            partnership options available.
+        </p>
+    </div>
+</div>
+
+<main>
+
+<section class="container" id="packages">
+
+    <div class="section-heading">
+        <h2>Partnership Packages</h2>
+        <p>
+            Choose the promotional package that best fits your
+            business and marketing goals.
+        </p>
+    </div>
+
+    <div class="packages">
+
+        <!-- PACKAGE 1 -->
+
+        <article class="package">
+
+            <div class="package-number">Package 01</div>
+
+            <h3>On-Site Stream</h3>
+
+            <p class="package-description">
+                A live promotional appearance at your business.
+            </p>
+
+            <div class="package-price">
+                Custom Quote
+                <small>Based on location and logistics.</small>
+            </div>
+
+            <h4>Included Services</h4>
+
+            <ul>
+                <li>5–6 hour livestream broadcast from your business.</li>
+                <li>Business name and location featured during the stream.</li>
+                <li>Verbal business mentions throughout the broadcast.</li>
+                <li>Business tagged in relevant stream announcements and social posts.</li>
+                <li>Your location and experience featured as part of the stream.</li>
+                <li>Opportunities for viewers to interact with your business through the stream.</li>
+            </ul>
+
+            <div class="best-for">
+                <strong>Ideal for:</strong> Businesses looking to
+                introduce themselves to a new online audience.
+            </div>
+
+        </article>
+
+        <!-- PACKAGE 2 -->
+
+        <article class="package featured">
+
+            <div class="package-number">Package 02</div>
+
+            <h3>Featured Partner</h3>
+
+            <p class="package-description">
+                A livestream combined with additional social media exposure.
+            </p>
+
+            <div class="package-price">
+                Custom Quote
+                <small>Based on location and logistics.</small>
+            </div>
+
+            <h4>Everything in On-Site Stream, plus:</h4>
+
+            <ul>
+                <li>One dedicated short-form promotional video featuring your business.</li>
+                <li>Video published to TikTok, Instagram Reels, and YouTube Shorts.</li>
+                <li>Dedicated business introduction during the livestream.</li>
+                <li>Business tagged and credited in promotional video posts.</li>
+                <li>Additional pre-stream promotional announcement.</li>
+                <li>Business included in the livestream title or description where appropriate.</li>
+            </ul>
+
+            <div class="best-for">
+                <strong>Ideal for:</strong> Businesses wanting promotional
+                content that can continue generating exposure after the event.
+            </div>
+
+        </article>
+
+        <!-- PACKAGE 3 -->
+
+        <article class="package">
+
+            <div class="package-number">Package 03</div>
+
+            <h3>Promotional Campaign</h3>
+
+            <p class="package-description">
+                A multi-platform promotional campaign centered around your business.
+            </p>
+
+            <div class="package-price">
+                Custom Quote
+                <small>Based on location and campaign scope.</small>
+            </div>
+
+            <h4>Everything in Featured Partner, plus:</h4>
+
+            <ul>
+                <li>Two to three dedicated short-form videos featuring your business.</li>
+                <li>Dedicated promotional segment during the livestream.</li>
+                <li>Multiple promotional posts leading up to the event.</li>
+                <li>Post-stream recap highlighting the experience.</li>
+                <li>Additional behind-the-scenes footage.</li>
+                <li>Business featured in stream graphics and promotional materials.</li>
+                <li>Extended social media coverage before and after the event.</li>
+            </ul>
+
+            <div class="best-for">
+                <strong>Ideal for:</strong> Businesses looking for a more
+                substantial marketing push and multiple pieces of content.
+            </div>
+
+        </article>
+
+        <!-- PACKAGE 4 -->
+
+        <article class="package">
+
+            <div class="package-number">Package 04</div>
+
+            <h3>Presenting Partner</h3>
+
+            <p class="package-description">
+                A fully branded promotional livestream experience.
+            </p>
+
+            <div class="package-price">
+                Custom Quote
+                <small>Based on location and campaign scope.</small>
+            </div>
+
+            <h4>Everything in Promotional Campaign, plus:</h4>
+
+            <ul>
+                <li>Livestream branded as a collaboration with your business.</li>
+                <li>Recognition as the presenting partner of the stream.</li>
+                <li>Custom stream graphics featuring your business branding.</li>
+                <li>Dedicated promotional content tailored to your business.</li>
+                <li>Four to five short-form videos across social media platforms.</li>
+                <li>Extended business-focused coverage throughout the stream.</li>
+                <li>Opportunity to incorporate promotions, giveaways, or viewer incentives.</li>
+                <li>Priority placement in promotional announcements and content.</li>
+                <li>Post-campaign report covering available viewership and engagement metrics.</li>
+            </ul>
+
+            <div class="best-for">
+                <strong>Ideal for:</strong> Businesses interested in making
+                the livestream a larger promotional event.
+            </div>
+
+        </article>
+
+    </div>
+</section>
+
+<section class="details">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Partnership Details</h2>
+            <p>
+                A few things to keep in mind when planning a promotional event.
+            </p>
+        </div>
+
+        <div class="details-grid">
+
+            <div class="detail">
+                <h3>Travel & Expenses</h3>
+                <p>
+                    Travel, lodging, and other out-of-pocket expenses
+                    will be discussed and agreed upon when preparing your quote.
+                </p>
+            </div>
+
+            <div class="detail">
+                <h3>Location Requirements</h3>
+                <p>
+                    The business and creator will coordinate suitable
+                    access to the location, electrical power, and internet
+                    before the event.
+                </p>
+            </div>
+
+            <div class="detail">
+                <h3>Performance Expectations</h3>
+                <p>
+                    Specific viewer counts, impressions, engagement,
+                    and sales cannot be guaranteed. Available performance
+                    metrics can be provided after the campaign.
+                </p>
+            </div>
+
+            <div class="detail">
+                <h3>Content Ownership</h3>
+                <p>
+                    Content ownership and any business reuse, paid
+                    advertising, or licensing rights will be agreed
+                    upon separately.
+                </p>
+            </div>
+
+            <div class="detail">
+                <h3>Content Approval</h3>
+                <p>
+                    Business information and promotional claims can be
+                    reviewed for accuracy. Any additional approval
+                    requirements will be agreed upon in advance.
+                </p>
+            </div>
+
+            <div class="detail">
+                <h3>Scheduling</h3>
+                <p>
+                    All partnerships are subject to availability,
+                    location suitability, and a mutually agreed schedule.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Interested in Partnering?</h2>
+
+    <p>
+        If you're interested in bringing a livestream to your business,
+        I'd be happy to discuss the available packages and put together
+        a promotional plan that fits your goals.
+    </p>
+
+    <!-- Replace the email address below with your business email. -->
+
+    <a href="mailto:YOUR-EMAIL@example.com?subject=Promotional%20Partnership%20Inquiry">
+        Get in Touch
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <span>© <span id="year"></span> BluishSavage</span>
+        <span>Promotional Livestream Partnerships</span>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
